@@ -1,0 +1,16 @@
+//
+//  UITextField+QJSExtentRange.h
+//  RAC_Demo_1
+//
+//  Created by qjsios on 2017/3/6.
+//  Copyright © 2017年 zhios. All rights reserved.
+//
+
+#import <UIKit/UIKit.h>
+
+@interface UITextField (QJSExtentRange)
+
+- (NSRange)selectedRange;
+- (void)setSelectedRange:(NSRange)range;
+
+@end

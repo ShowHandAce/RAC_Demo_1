@@ -1,0 +1,25 @@
+//
+//  RAC_Demo_1-PrefixHeader.pch
+//  RAC_Demo_1
+//
+//  Created by qjsios on 2017/2/22.
+//  Copyright © 2017年 zhios. All rights reserved.
+//
+
+#ifndef RAC_Demo_1_PrefixHeader_pch
+#define RAC_Demo_1_PrefixHeader_pch
+
+#ifdef __OBJC__     //里边的内容只能用到.m 或.mm 文件中
+
+#import <ReactiveObjC/ReactiveObjC.h>
+#import <Masonry/Masonry.h>
+#import "IQKeyboardManager.h"
+#import "RDConstant.h"
+#import "RDUtil.h"
+
+#endif
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#endif /* RAC_Demo_1_PrefixHeader_pch */

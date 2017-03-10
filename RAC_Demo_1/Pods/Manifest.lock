@@ -1,0 +1,18 @@
+PODS:
+  - IQKeyboardManager (4.0.8)
+  - Masonry (1.0.2)
+  - ReactiveObjC (2.1.2)
+
+DEPENDENCIES:
+  - IQKeyboardManager (~> 4.0.8)
+  - Masonry (~> 1.0)
+  - ReactiveObjC (~> 2.1)
+
+SPEC CHECKSUMS:
+  IQKeyboardManager: 1a8189fa153bf09044355ee0ad36826f6767e7f7
+  Masonry: 7c429b56da9d4ee0bbb3ed77a5ea710d6a5df39e
+  ReactiveObjC: 7b6782ae39f9ac0f57205c3b0c0b69b9dd7048c0
+
+PODFILE CHECKSUM: 4769a3636dc3fd3726c4ef75198df6bc6df57410
+
+COCOAPODS: 1.2.0
