@@ -62,6 +62,8 @@
 - (UITextField *)userNameTextField {
     if (!_userNameTextField) {
         UITextField *textField = [[UITextField alloc] init];
+        textField.keyboardType = UIKeyboardTypeASCIICapable;
+        textField.autocorrectionType = UITextAutocorrectionTypeNo;
         textField.font = [UIFont systemFontOfSize:15];
         textField.clearButtonMode = UITextFieldViewModeWhileEditing;
         textField.placeholder = @"GitHub username or email";
