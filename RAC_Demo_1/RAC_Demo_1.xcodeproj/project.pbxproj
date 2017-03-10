@@ -11,7 +11,6 @@
 		9FCFBA33DC0895DE0649AEE3 /* Pods_RAC_Demo_1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00535FB6980DB37D6DB729EA /* Pods_RAC_Demo_1.framework */; };
 		B934CFDB1E68216D00A3D00E /* NHKeyboard.m in Sources */ = {isa = PBXBuildFile; fileRef = B934CFDA1E68216D00A3D00E /* NHKeyboard.m */; };
 		B934CFDF1E6911C000A3D00E /* RDLogInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B934CFDE1E6911C000A3D00E /* RDLogInViewController.m */; };
-		B934CFE31E69406200A3D00E /* UITextField+QJSSecurity.m in Sources */ = {isa = PBXBuildFile; fileRef = B934CFE21E69406200A3D00E /* UITextField+QJSSecurity.m */; };
 		B934CFE71E6D339300A3D00E /* QJSSecurityTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = B934CFE61E6D339300A3D00E /* QJSSecurityTextField.m */; };
 		B934CFEA1E6D4FAC00A3D00E /* UITextField+QJSExtentRange.m in Sources */ = {isa = PBXBuildFile; fileRef = B934CFE91E6D4FAC00A3D00E /* UITextField+QJSExtentRange.m */; };
 		B9A81ABD1E5D2CFA00DB974F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B9A81ABC1E5D2CFA00DB974F /* main.m */; };
@@ -55,8 +54,6 @@
 		B934CFDA1E68216D00A3D00E /* NHKeyboard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NHKeyboard.m; sourceTree = "<group>"; };
 		B934CFDD1E6911C000A3D00E /* RDLogInViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RDLogInViewController.h; sourceTree = "<group>"; };
 		B934CFDE1E6911C000A3D00E /* RDLogInViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RDLogInViewController.m; sourceTree = "<group>"; };
-		B934CFE11E69406200A3D00E /* UITextField+QJSSecurity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextField+QJSSecurity.h"; sourceTree = "<group>"; };
-		B934CFE21E69406200A3D00E /* UITextField+QJSSecurity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+QJSSecurity.m"; sourceTree = "<group>"; };
 		B934CFE51E6D339300A3D00E /* QJSSecurityTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QJSSecurityTextField.h; sourceTree = "<group>"; };
 		B934CFE61E6D339300A3D00E /* QJSSecurityTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QJSSecurityTextField.m; sourceTree = "<group>"; };
 		B934CFE81E6D4FAC00A3D00E /* UITextField+QJSExtentRange.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextField+QJSExtentRange.h"; sourceTree = "<group>"; };
@@ -160,8 +157,6 @@
 		B934CFE01E69402800A3D00E /* Categorys */ = {
 			isa = PBXGroup;
 			children = (
-				B934CFE11E69406200A3D00E /* UITextField+QJSSecurity.h */,
-				B934CFE21E69406200A3D00E /* UITextField+QJSSecurity.m */,
 				B934CFE81E6D4FAC00A3D00E /* UITextField+QJSExtentRange.h */,
 				B934CFE91E6D4FAC00A3D00E /* UITextField+QJSExtentRange.m */,
 			);
@@ -560,7 +555,6 @@
 				B934CFDF1E6911C000A3D00E /* RDLogInViewController.m in Sources */,
 				B9A81AC31E5D2CFA00DB974F /* ViewController.m in Sources */,
 				B934CFDB1E68216D00A3D00E /* NHKeyboard.m in Sources */,
-				B934CFE31E69406200A3D00E /* UITextField+QJSSecurity.m in Sources */,
 				B9A81AC01E5D2CFA00DB974F /* AppDelegate.m in Sources */,
 				B934CFE71E6D339300A3D00E /* QJSSecurityTextField.m in Sources */,
 				B9A81ABD1E5D2CFA00DB974F /* main.m in Sources */,
