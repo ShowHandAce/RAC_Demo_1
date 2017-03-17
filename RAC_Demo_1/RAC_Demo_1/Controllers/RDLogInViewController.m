@@ -10,6 +10,8 @@
 #import "RDButton.h"
 #import "QJSSecurityTextField.h"
 
+#import "RWDummySignInService.h"
+
 @interface RDLogInViewController ()
 
 @property (nonatomic, strong) UIButton *avatarButton;   /**< 头像按钮 */
@@ -27,6 +29,8 @@
 //@property (nonatomic, strong) IQKeyboardReturnKeyHandler *returnKeyHa
 
 @property (nonatomic, strong) UIButton *testBtn;
+
+@property (strong, nonatomic) RWDummySignInService *signInService;
 
 @end
 
@@ -118,6 +122,16 @@
     
     [self configSubElements];
     
+    self.signInService = [[RWDummySignInService alloc] init];
+    
+    
+    
+    [self.userNameTextField.rac_textSignal subscribeNext:^(NSString * _Nullable x) {
+        
+    }];
+    
+    
+    
     @weakify(self);
     RACSignal *validUserNameSignal = [self.userNameTextField.rac_textSignal map:^id _Nullable(NSString * _Nullable value) {
         @strongify(self)
@@ -146,8 +160,26 @@
         self.loginButton.enabled = [x boolValue];
     }];
     
-    [[self.loginButton rac_signalForControlEvents:UIControlEventTouchUpInside] subscribeNext:^(__kindof UIControl * _Nullable x) {
-        NSLog(@"登录\n%@",self.passWordTextField.text);
+    [[[[self.loginButton
+        rac_signalForControlEvents:UIControlEventTouchUpInside]
+        doNext:^(__kindof UIControl * _Nullable x) {
+            self.loginButton.enabled = NO;
+        }]
+        flattenMap:^__kindof RACSignal * _Nullable(__kindof UIControl * _Nullable value) {
+            return [self signInSignal];
+        }]
+        subscribeNext:^(id  _Nullable x) {
+            self.loginButton.enabled = YES;
+            NSLog(@"Sign in result: %@",x);
+        }];
+}
+
+- (RACSignal *)signInSignal {
+    return [RACSignal createSignal:^RACDisposable * _Nullable(id<RACSubscriber>  _Nonnull subscriber) {
+        [self.signInService signInWithUsername:self.userNameTextField.text password:self.passWordTextField.cipherText complete:^(BOOL success) {
+            [subscriber sendNext:@(success)];
+        }];
+        return nil;
     }];
 }
 

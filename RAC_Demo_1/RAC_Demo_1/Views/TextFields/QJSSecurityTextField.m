@@ -38,22 +38,6 @@
     }
 }
 
-- (void)setText:(NSString *)text {
-    
-    self.cipherText = text;
-    
-    NSMutableString *mapText = [NSMutableString string];
-    
-    for (NSInteger i=0; i<text.length; i++) {
-        [mapText appendString:@"●"];
-    }
-    [super setText:mapText];
-}
-
-- (NSString *)text {
-    return _cipherText;
-}
-
 - (NSString *)cipherText {
     if (!_cipherText) {
         _cipherText = [NSString string];
@@ -78,6 +62,10 @@
     if (sender.text.length == 0) {
         self.cipherText = @"";
     }
+        
+    if (!(self.inputView && [self.inputView isKindOfClass:[NHKeyboard class]])) {
+        self.cipherText = sender.text;
+    }
 }
 
 - (void)insertText:(NSString *)text {
@@ -92,7 +80,7 @@
     
     NSMutableString *mapText = [NSMutableString stringWithString:text];
     
-    if (self.cipherTextEntry) {
+    if (self.isCipherTextEntry) {
         [mapText setString:@""];
         for (NSInteger i=0; i<text.length; i++) {
             [mapText appendString:@"●"];
@@ -116,16 +104,17 @@
     [super deleteBackward];
 }
 
+//禁用输入框复制粘贴功能
 - (BOOL)canPerformAction:(SEL)action withSender:(id)sender {
-    return NO;
+    return !(self.inputView && [self.inputView isKindOfClass:[NHKeyboard class]]);
 }
 
 /*
- // Only override drawRect: if you perform custom drawing.
- // An empty implementation adversely affects performance during animation.
- - (void)drawRect:(CGRect)rect {
- // Drawing code
- }
- */
+// Only override drawRect: if you perform custom drawing.
+// An empty implementation adversely affects performance during animation.
+- (void)drawRect:(CGRect)rect {
+    // Drawing code
+}
+*/
 
 @end

@@ -23,6 +23,7 @@
 		B9A81AE11E5D2CFA00DB974F /* RAC_Demo_1UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = B9A81AE01E5D2CFA00DB974F /* RAC_Demo_1UITests.m */; };
 		B9A81AF21E5E8A6100DB974F /* RDUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = B9A81AF11E5E8A6100DB974F /* RDUtil.m */; };
 		B9A81AF71E5E8BC300DB974F /* RDButton.m in Sources */ = {isa = PBXBuildFile; fileRef = B9A81AF61E5E8BC300DB974F /* RDButton.m */; };
+		B9B15D681E76311D0030BD73 /* RWDummySignInService.m in Sources */ = {isa = PBXBuildFile; fileRef = B9B15D671E76311D0030BD73 /* RWDummySignInService.m */; };
 		D7D7F04794CA9B5B0D52CA80 /* Pods_RAC_Demo_1Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9474E39C84F2252BF7351D49 /* Pods_RAC_Demo_1Tests.framework */; };
 /* End PBXBuildFile section */
 
@@ -80,6 +81,8 @@
 		B9A81AF51E5E8BC300DB974F /* RDButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RDButton.h; sourceTree = "<group>"; };
 		B9A81AF61E5E8BC300DB974F /* RDButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RDButton.m; sourceTree = "<group>"; };
 		B9A81AF81E5E8C2C00DB974F /* RDConstant.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RDConstant.h; sourceTree = "<group>"; };
+		B9B15D661E76311D0030BD73 /* RWDummySignInService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RWDummySignInService.h; sourceTree = "<group>"; };
+		B9B15D671E76311D0030BD73 /* RWDummySignInService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RWDummySignInService.m; sourceTree = "<group>"; };
 		C17AA431E519739820750E34 /* Pods-RAC_Demo_1UITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RAC_Demo_1UITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-RAC_Demo_1UITests/Pods-RAC_Demo_1UITests.release.xcconfig"; sourceTree = "<group>"; };
 		DD6C59FF0065E70081455B76 /* Pods-RAC_Demo_1.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RAC_Demo_1.release.xcconfig"; path = "Pods/Target Support Files/Pods-RAC_Demo_1/Pods-RAC_Demo_1.release.xcconfig"; sourceTree = "<group>"; };
 		E993BC13D75BA4C23BB63781 /* Pods-RAC_Demo_1Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RAC_Demo_1Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-RAC_Demo_1Tests/Pods-RAC_Demo_1Tests.release.xcconfig"; sourceTree = "<group>"; };
@@ -210,6 +213,8 @@
 				B9A81AC71E5D2CFA00DB974F /* Assets.xcassets */,
 				B9A81AC91E5D2CFA00DB974F /* LaunchScreen.storyboard */,
 				B9A81ACC1E5D2CFA00DB974F /* Info.plist */,
+				B9B15D661E76311D0030BD73 /* RWDummySignInService.h */,
+				B9B15D671E76311D0030BD73 /* RWDummySignInService.m */,
 				B9A81ABB1E5D2CFA00DB974F /* Supporting Files */,
 			);
 			path = RAC_Demo_1;
@@ -560,6 +565,7 @@
 				B9A81ABD1E5D2CFA00DB974F /* main.m in Sources */,
 				B934CFEA1E6D4FAC00A3D00E /* UITextField+QJSExtentRange.m in Sources */,
 				B9A81AF21E5E8A6100DB974F /* RDUtil.m in Sources */,
+				B9B15D681E76311D0030BD73 /* RWDummySignInService.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

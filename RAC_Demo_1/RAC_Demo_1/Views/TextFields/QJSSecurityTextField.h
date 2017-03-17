@@ -10,8 +10,8 @@
 
 @interface QJSSecurityTextField : UITextField
 
-//@property (nonatomic, copy, readonly) NSString *cipherText;   /**< 密文文本 */
+@property (nonatomic, copy, readonly) NSString *cipherText;   /**< 密文文本 */
 
-@property (nonatomic, assign) BOOL cipherTextEntry;
+@property (nonatomic, assign, getter=isCipherTextEntry) BOOL cipherTextEntry;
 
 @end
